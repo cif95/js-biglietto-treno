@@ -2,7 +2,7 @@
 let travelKm = parseInt(prompt('Quanti km vuoi percorrere?'));
 console.log(travelKm);
 if ((isNaN(travelKm) || (travelKm > 1000) || (travelKm < 10))){
-	console.log('Non hai inserito un numero valido, ne creo uno casuale');
+	console.log('Non hai inserito un valore valido, ne creo uno casuale');
 	travelKm = Math.floor(Math.random()*1000) + 10;
 	console.log('il numero di km generato casualmente è ' + travelKm)
 } else {
@@ -15,7 +15,7 @@ document.getElementById("travel-km").innerHTML += travelKm;
 let userAge = parseInt(prompt('Quanti anni hai?'));
 console.log(userAge);
 if ((isNaN(userAge) || (userAge > 110) || (userAge < 1))){
-	console.log('Hai inserito un valore non valido, ne creo uno casuale');
+	console.log('Non hai inserito un valore valido, ne creo uno casuale');
 	userAge = parseInt(Math.floor(Math.random()*110));
 	console.log('l\'età casuale è ' + userAge)
 } else {
