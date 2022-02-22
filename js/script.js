@@ -16,7 +16,7 @@ let userAge = parseInt(prompt('Quanti anni hai?'));
 console.log(userAge);
 if ((isNaN(userAge) || (userAge > 110) || (userAge < 14))){
 	console.log('Non hai inserito un valore valido, ne creo uno casuale');
-	userAge = parseInt(Math.floor(Math.random()*110));
+	userAge = parseInt(Math.floor(Math.random()*110) + 14);
 	console.log('l\'età casuale è ' + userAge)
 } else {
 	console.log('l\'utente ha inserito un numero valido');
