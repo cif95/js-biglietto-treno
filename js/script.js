@@ -15,3 +15,4 @@ if (userAge < 18){
 	console.log('l\'utente non ha diritto ad uno sconto');
 }
 
+document.getElementById("price").innerHTML += ticketPrice.toFixed(2);
