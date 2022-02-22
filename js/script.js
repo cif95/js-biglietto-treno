@@ -9,7 +9,7 @@ if ((isNaN(travelKm) || (travelKm > 1000) || (travelKm < 10))){
 	console.log('l\'utente ha inserito un numero valido');
 }
 
-document.getElementById("travel-km").innerHTML += travelKm;
+document.getElementById("travel-km").innerHTML += + travelKm;
 
 
 let userAge = parseInt(prompt('Quanti anni hai?'));
@@ -22,7 +22,7 @@ if ((isNaN(userAge) || (userAge > 110) || (userAge < 1))){
 	console.log('l\'utente ha inserito un numero valido');
 }
 
-document.getElementById("user-age").innerHTML += userAge;
+document.getElementById("user-age").innerHTML += + userAge;
 
 
 let ticketPrice = travelKm*0.21;
